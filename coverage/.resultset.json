@@ -25,7 +25,7 @@
         null,
         1,
         null,
-        null,
+        1,
         null,
         null,
         1,
@@ -46,15 +46,9 @@
         1,
         null
       ],
-      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/creating_links_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/1. feature_tests_spec.rb": [
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
         null,
         null,
         1,
@@ -67,28 +61,19 @@
         null,
         null
       ],
-      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/feature_tests_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/2. creating_links_spec.rb": [
         1,
         1,
         1,
         1,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1485369176
+    "timestamp": 1485418233
   }
 }
