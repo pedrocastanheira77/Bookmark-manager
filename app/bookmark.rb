@@ -1,8 +1,7 @@
-require 'sinatra/base'
-require_relative 'models/link.rb'
-
 ENV["RACK_ENV"] ||= "development"
-# set :environment, :development - different way of setting an environment to default mode
+
+require 'sinatra/base'
+require_relative 'data_mapper_setup'
 
 class Bookmark < Sinatra::Base
 
@@ -20,7 +19,10 @@ class Bookmark < Sinatra::Base
   end
 
   post '/links' do
-    link = Link.create(title: params[:title], url: params[:url])
+    link = Link.new(title: params[:title], url: params[:url])
+    tag = Tag.first_or_create(name: params[:tag])
+    link.tags << tag
+    link.save
     redirect '/links'
   end
 
