@@ -1,12 +1,11 @@
 ENV["RACK_ENV"] ||= "development"
 
 require 'sinatra/base'
-require 'bcrypt'
 require_relative 'data_mapper_setup'
 
 class Bookmark < Sinatra::Base
   enable :sessions
-  include BCrypt
+  set :session_secret, 'super secret'
 
   helpers do
     def current_user
@@ -53,9 +52,7 @@ class Bookmark < Sinatra::Base
   end
 
   post '/users' do
-    user_password = BCrypt::Password.create(params[:password])
-    user = User.create(email: params[:email], password: user_password)
-
+    user = User.create(email: params[:email], password: params[:password])
     session[:user_id] = user.id
     redirect '/links'
   end
