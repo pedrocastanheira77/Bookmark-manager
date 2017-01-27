@@ -1,14 +1,16 @@
 <p>List of links:</p>
 
+
 <ul id="links">
   <% @links.each do |link| %>
     <li>
       Title: <%= link.title %>
-      url: <%= link.url %>
-      url: <%= link.tags.map(&:name).join %>
+      Url: <%= link.url %>
+      Tags: <%= link.tags.map(&:name).join(' ') %>
     </li>
   <% end %>
 </ul>
+
 
 <form class="" action="/links/new">
   <input type="submit" name="add_link" value="Add Link">

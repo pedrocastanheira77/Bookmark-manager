@@ -9,8 +9,8 @@ feature '4. filter links by tag' do
     url: 'www.facebook.com',
     tags: [Tag.first_or_create(name: "social")])
     Link.create(
-    title: 'Facebook',
-    url: 'www.facebook.com',
+    title: 'google',
+    url: 'www.google.com',
     tags: [Tag.first_or_create(name: "bubbles")])
   end
 

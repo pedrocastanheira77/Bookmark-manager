@@ -1,4 +1,4 @@
-feature '2. add a link' do
+feature '2. Add a link' do
   scenario 'add the site address and title to my bookmark manager' do
     visit '/links'
     click_button('Add Link')
