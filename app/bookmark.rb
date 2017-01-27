@@ -52,9 +52,17 @@ class Bookmark < Sinatra::Base
   end
 
   post '/users' do
-    user = User.create(email: params[:email], password: params[:password])
-    session[:user_id] = user.id
-    redirect '/links'
+    user = User.create(email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
+    if user.id != nil
+      session[:user_id] = user.id
+      redirect '/links'
+    else
+      redirect '/user/error'
+    end
+  end
+
+  get '/user/error' do
+    erb :'users/error'
   end
 
   # start the server if ruby file executed directly

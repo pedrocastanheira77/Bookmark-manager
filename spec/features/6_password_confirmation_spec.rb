@@ -5,7 +5,8 @@ feature '6. Password confirmation' do
     fill_in(:email, with: 'lauren@makers.com')
     fill_in(:password, with: '1234')
     fill_in(:password_confirmation, with: '1235')
-    expect{click_button 'Signup'}.not_to change{User.count}.by(1)
+    click_button 'Signup'
+    expect(page).to have_text("Password and Password Confirmation mismatch")
   end
 
 end
