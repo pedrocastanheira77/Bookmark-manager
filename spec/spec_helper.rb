@@ -12,6 +12,7 @@ Coveralls.wear!
 
 ENV['RACK_ENV'] = 'test'
 
+require 'features/web_helper'
 require './app/models/link'
 require File.join(File.dirname(__FILE__), '..', './app/bookmark.rb')
 require 'capybara'

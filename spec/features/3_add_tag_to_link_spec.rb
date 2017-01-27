@@ -4,6 +4,7 @@
 
 feature '3.1 tag a link in bookmark manager' do
   scenario 'single tag a link' do
+    user_signup
     visit '/links/new'
     fill_in(:title, with: 'Facebook')
     fill_in(:url, with: 'www.facebook.com')
@@ -20,6 +21,7 @@ end
 
 feature '3.2 tag multiple links in bookmark manager' do
   scenario 'search social tag' do
+    user_signup
     visit '/links/new'
     fill_in(:title, with: 'Facebook')
     fill_in(:url, with: 'www.facebook.com')
