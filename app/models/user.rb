@@ -7,7 +7,7 @@ class User
   include BCrypt
 
   property :id,              Serial
-  property :email,           String
+  property :email,           String, required: true, format: :email_address
   property :password_digest, Text
 
   attr_reader :the_password
@@ -19,7 +19,4 @@ class User
     @the_password = password
     self.password_digest = BCrypt::Password.create(password)
   end
-
-
-
 end

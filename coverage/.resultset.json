@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/web_helper.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/web_helper.rb": [
         1,
         7,
         7,
@@ -10,7 +10,7 @@
         7,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/app/models/link.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/app/models/link.rb": [
         1,
         null,
         1,
@@ -23,7 +23,7 @@
         1,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/app/bookmark.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/app/bookmark.rb": [
         1,
         null,
         1,
@@ -38,12 +38,12 @@
         null,
         1,
         1,
-        54,
+        57,
         null,
         null,
         null,
         1,
-        1,
+        3,
         null,
         null,
         1,
@@ -77,24 +77,22 @@
         null,
         null,
         1,
-        8,
+        10,
         null,
         null,
         1,
-        8,
+        9,
         null,
-        8,
+        null,
+        null,
+        null,
+        9,
         7,
         7,
         null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
+        2,
+        2,
+        2,
         null,
         null,
         null,
@@ -102,7 +100,7 @@
         1,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/app/data_mapper_setup.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -114,7 +112,7 @@
         1,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/app/models/tag.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/app/models/tag.rb": [
         1,
         null,
         1,
@@ -126,7 +124,7 @@
         1,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/app/models/user.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/app/models/user.rb": [
         1,
         1,
         1,
@@ -145,15 +143,12 @@
         1,
         null,
         1,
-        8,
-        8,
-        null,
-        null,
-        null,
+        9,
+        9,
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/1_feature_tests_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/1_feature_tests_spec.rb": [
         null,
         null,
         null,
@@ -169,7 +164,7 @@
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/2_creating_links_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/2_creating_links_spec.rb": [
         1,
         1,
         1,
@@ -182,7 +177,7 @@
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/3_add_tag_to_link_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/3_add_tag_to_link_spec.rb": [
         null,
         null,
         null,
@@ -222,7 +217,7 @@
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/4_filter_by_test_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/4_filter_by_test_spec.rb": [
         null,
         null,
         null,
@@ -249,7 +244,7 @@
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/5_user_login_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/5_user_login_spec.rb": [
         1,
         null,
         1,
@@ -267,7 +262,7 @@
         null,
         null
       ],
-      "/Users/Lauren/Makers/day_5_bookmakr/Bookmark-manager/spec/features/6_password_confirmation_spec.rb": [
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/6_password_confirmation_spec.rb": [
         1,
         null,
         1,
@@ -281,8 +276,26 @@
         null,
         null,
         null
+      ],
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/7_checking_email_format_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1485532783
+    "timestamp": 1485606860
   }
 }

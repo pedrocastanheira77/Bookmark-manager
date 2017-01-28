@@ -1,9 +1,23 @@
+<style>
+  input:invalid {
+    border: 1px solid red;
+  }
+
+  input:valid {
+    border: 1px solid green;
+  }
+</style>
+
 <form action="/users" method="post">
-  <label for="email">Insert Email</label>
-  <input type="text" name="email" value='<%= @email %>'>
+
+  <label for="text">Insert Email</abbr></label>
+  <input type="email" name="email" value='<%= @email %>' required>
+
   <label for="password">Insert Password</label>
   <input type="text" name="password">
+
   <label for="password_confirmation">Insert Password Confirmation</label>
   <input type="text" name="password_confirmation">
+
   <input type="submit" name="signup" value="Signup">
 </form>
