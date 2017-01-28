@@ -3,6 +3,16 @@
 
   <% if current_user %>
     <p>Welcome, <%= current_user.email %></p>
+    <form action="/sessions" method="post">
+      <input type='hidden' name='_method' value='delete'>
+      <input type="submit" name="signout" value="Sign out">
+    </form>
+  <% end %>
+
+  <% if flash[:notice] %>
+    <div id='notice'>
+      <%= flash[:notice] %>
+    </div>
   <% end %>
 
   <% if flash[:errors] && !flash[:errors].empty? %>

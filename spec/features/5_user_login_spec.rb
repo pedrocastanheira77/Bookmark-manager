@@ -6,7 +6,7 @@ feature '5. User Signup' do
 
   scenario 'When user successfully creates their account they will see their email' do
     user_signup
-    expect(page).to have_text("lauren@makers.com")
+    expect(page).to have_text("jose@makers.com")
   end
 
   scenario 'After signup users database will count one more' do
