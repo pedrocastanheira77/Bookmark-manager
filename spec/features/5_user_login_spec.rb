@@ -1,5 +1,4 @@
 feature '5. User Signup' do
-
   scenario 'user is able to create account' do
     user_signup
     expect(current_path).to eq("/links")

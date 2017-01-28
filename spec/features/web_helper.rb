@@ -3,5 +3,12 @@ def user_signup
   fill_in(:email, with: "lauren@makers.com")
   fill_in(:password, with: "1234")
   fill_in(:password_confirmation, with: "1234")
-  click_button("Signup")
+  click_button("Sign up")
+end
+
+def user_signin
+  visit '/sessions/new'
+  fill_in(:email, with: "jose@makers.com")
+  fill_in(:password, with: "1234")
+  click_button("Sign in")
 end

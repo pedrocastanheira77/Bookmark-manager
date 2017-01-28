@@ -1,4 +1,4 @@
-feature 'A user can not sign up with an already registered email address' do
+feature '8. A user can not sign up with an already registered email address' do
  scenario 'Email is unique in the database' do
    user_signup
    expect{user_signup}.to change(User, :count).by(0)

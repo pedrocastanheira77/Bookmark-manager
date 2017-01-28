@@ -17,13 +17,22 @@ class User
                                       }
   property :password_digest, Text
 
-  attr_reader :the_password
+  attr_reader :password
   attr_accessor :password_confirmation
 
-  validates_confirmation_of :the_password, confirm: :password_confirmation
-
+  validates_confirmation_of :password, confirm: :password_confirmation
+  
   def password=(password)
-    @the_password = password
+    @password = password
     self.password_digest = BCrypt::Password.create(password)
+  end
+
+  def self.authenticate(email, password)
+    user = first(email: email)
+    if user && BCrypt::Password.new(user.password_digest) == password
+      user
+    else
+      nil
+    end
   end
 end
