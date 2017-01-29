@@ -32,7 +32,7 @@ class Bookmark < Sinatra::Base
       user.generate_token
       SendRecoverLink.call(user)
     end
-      erb :'users/acknowledgment'
+    erb :'users/acknowledgement'
 end
 
   get '/users/reset_password' do
