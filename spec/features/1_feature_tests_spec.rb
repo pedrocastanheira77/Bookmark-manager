@@ -2,7 +2,7 @@
 # So that I can quickly go to web sites I regularly visit
 # I would like to see a list of links on the homepage
 
-feature '1. See a list of links on the homepage' do
+feature '01. See a list of links on the homepage' do
   scenario 'list links' do
       user_signup
       Link.create(title: "google", url: "www.google.com")

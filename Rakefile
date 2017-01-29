@@ -1,7 +1,8 @@
 require 'data_mapper'
-require './app/bookmark.rb'
+require './app/app.rb'
 
 namespace :db do
+
   desc "Non destructive upgrade"
   task :auto_upgrade do
     DataMapper.auto_upgrade!

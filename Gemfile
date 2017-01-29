@@ -1,21 +1,28 @@
-# frozen_string_literal: true
 source 'http://rubygems.org'
 
 ruby '2.3.3'
 
 gem 'sinatra'
+gem 'sinatra-flash'
+gem 'sinatra-partial'
+gem 'shotgun'
+
 gem 'selenium-webdriver'
 gem 'rake'
+
+gem 'pg'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
-gem 'shotgun'
-gem 'rubocop-rspec'
-gem 'rubocop'
-gem 'coveralls'
-gem 'pg'
+gem 'database_cleaner'
+
 gem 'rspec'
+gem 'coveralls'
+gem 'rubocop'
+gem 'rubocop-rspec'
 gem 'rspec-sinatra'
 gem 'capybara'
-gem 'database_cleaner'
+
 gem 'bcrypt'
-gem 'sinatra-flash'
+gem 'timecop'
+gem 'mailgun-ruby'
+gem 'dotenv'

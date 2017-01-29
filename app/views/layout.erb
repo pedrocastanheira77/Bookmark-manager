@@ -7,6 +7,21 @@
       <input type='hidden' name='_method' value='delete'>
       <input type="submit" name="signout" value="Sign out">
     </form>
+
+    <form action="/tags" method="post">
+      <input type="text" name="tag_to_search" required>
+      <input type="submit" name="search_link" value="Search">
+    </form>
+
+    <form for="clean_search_keywords" action="/links">
+      <input type="submit" name="clean_search_keywords" value="Clean Filters">
+    </form>
+
+  <% elsif !@user_page %>
+    <form action="/users/new">
+      <label for="sign_up">If you don't have an account, please feel free to sign up!</label>
+      <input type="submit" name="sign_up" value="Sign up">
+    </form>
   <% end %>
 
   <% if flash[:notice] %>

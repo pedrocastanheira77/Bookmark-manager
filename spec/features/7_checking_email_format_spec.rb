@@ -1,6 +1,6 @@
-feature '7. Checking email format' do
+feature '07. Checking email format' do
   scenario 'email format is wrong' do
-    visit '/'
+    visit '/users/new'
     fill_in(:email, with: 'lauren')
     fill_in(:password, with: '1234')
     fill_in(:password_confirmation, with: '1234')
@@ -8,7 +8,7 @@ feature '7. Checking email format' do
   end
 
   scenario 'email is empty' do
-    visit '/'
+    visit '/users/new'
     fill_in(:password, with: '1234')
     fill_in(:password_confirmation, with: '1234')
     expect(current_path).to eq('/users/new')

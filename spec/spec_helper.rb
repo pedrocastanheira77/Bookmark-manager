@@ -13,8 +13,9 @@ Coveralls.wear!
 ENV['RACK_ENV'] = 'test'
 
 require_relative 'helpers/session'
+require_relative 'helpers/link'
 require './app/models/link'
-require File.join(File.dirname(__FILE__), '..', './app/bookmark.rb')
+require File.join(File.dirname(__FILE__), '..', './app/app.rb')
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
@@ -58,6 +59,8 @@ RSpec.configure do |config|
   end
 
   config.include SessionHelpers
+
+  config.include AddLink
 
   config.include Capybara::DSL
   # rspec-expectations config goes here. You can use an alternate
