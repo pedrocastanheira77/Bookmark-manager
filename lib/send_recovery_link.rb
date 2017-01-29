@@ -1,5 +1,5 @@
 require 'mailgun'
-require 'dotenv'
+require 'dotenv/load'
 
 class SendRecoverLink
  def initialize(mailer: nil)
@@ -14,7 +14,7 @@ class SendRecoverLink
    mailer.send_message(ENV["mailgun_domain_name"], {from: "bookmarkmanager@mail.com",
        to: user.email,
        subject: "reset your password",
-       text: "click here to reset your password http://yourherokuapp.com/reset_password?token=#{user.password_token}" })
+       text: "click here to reset your password http://https://desolate-harbor-37703.herokuapp.com/sessions/new/reset_password?token=#{user.password_token}" })
  end
 
  private
